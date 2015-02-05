@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<languageexport>
+  <languagegroup>
+    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>Hello_World</word_key>
+      <word_default>Holaa!</word_default>
+      <word_custom>HELP~!!!</word_custom>
+    </lang>
+	  </languagegroup>
+</languageexport>

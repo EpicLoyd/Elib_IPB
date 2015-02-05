@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<information>
+  <data>
+    <name>EpicLibrary</name>
+    <public_name>Кабинет</public_name>
+    <hide_tab>0</hide_tab>
+    <author>EpicLoyd</author>
+    <description>Личный Кабинет</description>
+    <disabledatinstall>0</disabledatinstall>
+    <global_caches/>
+    <website/>
+    <update_check/>
+    <templategroups/>
+  </data>
+</information>

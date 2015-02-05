@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settingexport>
+  <settinggroup>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>elib_settings</conf_title_keyword>
+      <conf_title_title>Elib Settings</conf_title_title>
+      <conf_title_desc>Elib Settings page</conf_title_desc>
+      <conf_title_tab/>
+      <conf_title_app>elib</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Включен</conf_title>
+      <conf_description>Включен ли  ELib?</conf_description>
+      <conf_type>yes_no</conf_type>
+      <conf_key>elib_settings_enabled</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>General</conf_start_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>elib_settings_jk</conf_title_keyword>
+      <conf_title_title>Jedi Academy</conf_title_title>
+      <conf_title_desc>JK Settings</conf_title_desc>
+      <conf_title_tab>Elib Settings</conf_title_tab>
+      <conf_title_app>elib</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Удаленная БД</conf_title>
+      <conf_description>Использовать удаленную базу данных?</conf_description>
+      <conf_type>yes_no</conf_type>
+      <conf_key>elib_settings_jk_remotedb_enabled</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Database</conf_start_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_jk</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Host</conf_title>
+      <conf_description>Хост удаленной БД ( IP )</conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_jk_remotedb_host</conf_key>
+      <conf_default>localhost</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_jk</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Login</conf_title>
+      <conf_description>Логин</conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_jk_remotedb_login</conf_key>
+      <conf_default>root</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_jk</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Password</conf_title>
+      <conf_description>Пароль от удаленной БД</conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_jk_remotedb_password</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_jk</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Database</conf_title>
+      <conf_description>Название базы данных</conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_jk_remotedb_database</conf_key>
+      <conf_default>elib_jediacademy</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_jk</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>IP</conf_title>
+      <conf_description>IP Сервера с предустановленным ELib</conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_jk_general_serverip</conf_key>
+      <conf_default>localhost</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group>General</conf_start_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_jk</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>RCON Password</conf_title>
+      <conf_description>RemoteCONtrol пароль от сервер (sv_rconpassword)</conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_jk_general_rcon</conf_key>
+      <conf_default>rconpassword</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_jk</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_is_title>1</conf_is_title>
+      <conf_title_keyword>elib_settings_mc</conf_title_keyword>
+      <conf_title_title>Minecraft</conf_title_title>
+      <conf_title_desc>Minecraft Settings</conf_title_desc>
+      <conf_title_tab>Elib Settings</conf_title_tab>
+      <conf_title_app>elib</conf_title_app>
+      <conf_title_noshow>0</conf_title_noshow>
+    </setting>
+    <setting>
+      <conf_title>Удаленная БД</conf_title>
+      <conf_description>Использовать удаленную Базу данных</conf_description>
+      <conf_type>yes_no</conf_type>
+      <conf_key>elib_settings_mc_remotedb</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>1</conf_position>
+      <conf_start_group>Database</conf_start_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_mc</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Host</conf_title>
+      <conf_description>Название хоста удаленной БД ( ip )</conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_mc_remotedb_host</conf_key>
+      <conf_default>localhost</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>2</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_mc</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Login</conf_title>
+      <conf_description>Логин от удаленной БД</conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_mc_remotedb_login</conf_key>
+      <conf_default>root</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>3</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_mc</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Password</conf_title>
+      <conf_description>Пароль от удаленной БД</conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_mc_remotedb_password</conf_key>
+      <conf_default/>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>4</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_mc</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Database</conf_title>
+      <conf_description>Название базы данных</conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_mc_remotedb_database</conf_key>
+      <conf_default>elib_minecraft</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>5</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_mc</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>IP</conf_title>
+      <conf_description>IP Сервера</conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_mc_general_serverip</conf_key>
+      <conf_default>localhost</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>6</conf_position>
+      <conf_start_group>General</conf_start_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_mc</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>RCON Password</conf_title>
+      <conf_description>RemoteCONtrol пароль от сервера</conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_mc_general_rcon</conf_key>
+      <conf_default>rconpassword</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>7</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_mc</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Папка с Плащами</conf_title>
+      <conf_description>Относительно /htdocs/ ( /var/www )</conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_mc_general_cloakpath</conf_key>
+      <conf_default>/MinecraftCloaks</conf_default>
+      <conf_extra/>
+      <conf_evalphp><![CDATA[if ($save == 1){
+if(!file_exists($value)) echo ("Путь к скинам не является папкой! Укажите в настройках правильный путь.");
+
+
+
+}]]></conf_evalphp>
+      <conf_protected>1</conf_protected>
+      <conf_position>8</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_mc</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Папка со скинами</conf_title>
+      <conf_description>Относительно /htdocs/ ( /var/www/ )</conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_mc_general_skinpath</conf_key>
+      <conf_default>/MinecraftSkins</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>9</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_mc</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Путь до папки с лаунчером</conf_title>
+      <conf_description>относительно /htdocs/ ( /var/www/ )</conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_mc_general_launcherpath</conf_key>
+      <conf_default>/Launcher</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>10</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_mc</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Ключ защиты сессии</conf_title>
+      <conf_description>Никому не говорите!</conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_mc_auth_protectkey</conf_key>
+      <conf_default>123456789</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>11</conf_position>
+      <conf_start_group>Авторизация</conf_start_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_mc</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Ключ защиты POST запросов</conf_title>
+      <conf_description><![CDATA[-> Launcher. Никому не говорите]]></conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_mc_auth_keytolauncher</conf_key>
+      <conf_default>12345678987654321</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>12</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_mc</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Ключ защиты POST запросов</conf_title>
+      <conf_description><![CDATA[Launcher -> . Никому его не говорите!]]></conf_description>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_mc_auth_keyfromlauncher</conf_key>
+      <conf_default>12345678987654321</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>13</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_mc</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Версия лаунчера</conf_title>
+      <conf_description/>
+      <conf_type>input</conf_type>
+      <conf_key>elib_settings_mc_launcher_ver</conf_key>
+      <conf_default>Beta1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>14</conf_position>
+      <conf_start_group>Лаунчер</conf_start_group>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_mc</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Проверка лаунчера</conf_title>
+      <conf_description>Проверить, используя md5</conf_description>
+      <conf_type>yes_no</conf_type>
+      <conf_key>elib_settings_mc_launcher_md5</conf_key>
+      <conf_default>1</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>15</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_mc</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+    <setting>
+      <conf_title>Скачивать ассеты из папки</conf_title>
+      <conf_description/>
+      <conf_type>yes_no</conf_type>
+      <conf_key>elib_settings_mc_launcher_assets</conf_key>
+      <conf_default>0</conf_default>
+      <conf_extra/>
+      <conf_evalphp/>
+      <conf_protected>1</conf_protected>
+      <conf_position>16</conf_position>
+      <conf_start_group/>
+      <conf_add_cache>1</conf_add_cache>
+      <conf_keywords/>
+      <conf_title_keyword>elib_settings_mc</conf_title_keyword>
+      <conf_is_title>0</conf_is_title>
+    </setting>
+  </settinggroup>
+</settingexport>
