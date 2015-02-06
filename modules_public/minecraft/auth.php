@@ -12,6 +12,7 @@ class public_elib_minecraft_auth extends ipsCommand
 	  $data = str_replace(" ", "+", $data);
 	  $dec = $this->registry->getClass('elib_core')->decrypt($data);
 	  list($action, $clientname, $login, $pass, $launchermd5, $ctoken) = explode(':', $dec);
+	  $login = mysql_real_escape_string($login);
 	  if ($this->settings['elib_settings_mc_launcher_md5']){
 	  $isuptodate = $this->registry->getClass('elib_auth')->CheckLauncherMD5($launchermd5, true);
 	  if (!$isuptodate){

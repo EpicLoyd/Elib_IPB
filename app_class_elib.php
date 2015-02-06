@@ -30,12 +30,9 @@ class app_class_elib
 		$this->memberData =& $this->registry->member()->fetchMemberData();
 		$this->lang       =  $this->registry->class_localization;
 		
-        if ( !ipsRegistry::isClassLoaded('elib_core') )
-        {
-			//require_once( IPSLib::getAppDir( 'elib' ) . "/sources/classes/elib_class.php" );
-            $classToLoad = IPSLib::loadLibrary( IPSLib::getAppDir('elib').'/sources/classes/elib_core.php', 'class_elib_core', 'elib' );
-            $this->registry->setClass( 'elib_core', new $classToLoad( $registry ) );
-        }
+
+		require_once( IPSLib::getAppDir( 'elib' ) . "/sources/classes/elib_class.php" );
+
 		if ( !ipsRegistry::isClassLoaded('elib_auth') )
         {
 			//require_once( IPSLib::getAppDir( 'elib' ) . "/sources/classes/elib_class.php" );

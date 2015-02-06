@@ -17,8 +17,8 @@ function draw_model(canvas_id,scratch_id,username,scale,hat) {
 	document.getElementById(canvas_id).height = 44.8*scale;
 	
 	var skin = new Image();
-	//skin.src = 'skin.php?user=' + username;
-	skin.src = username + '.png';
+	skin.src = 'skin.php?user=' + username;
+	//skin.src = username + '.png';
 	skin.onload = function(){
 		//Draw the skin on to the scratch
 		scratch.drawImage(skin,0,0,64,32,0,0,64,32);
@@ -75,7 +75,6 @@ function draw_model(canvas_id,scratch_id,username,scale,hat) {
 		model.setTransform(-1,0.5,1,0.5,0,0);
 		model.scale(-1,1);
 		model.drawImage(document.getElementById(scratch_id), 8*scale, 0, 8*scale, 8*scale, -3*scale, 5*scale, 8*scale, 8*scale);
-		
 		if(hat == true) {
 			if(!is_one_color(scratch.getImageData(40*scale,8*scale,8*scale,8*scale))) {
 				//Hat
@@ -110,7 +109,7 @@ function draw_model_left(canvas_id,scratch_id,username,scale,hat) {
 	
 	var skin = new Image();
 	//skin.src = 'http://s3.amazonaws.com/MinecraftSkins/' + username + '.png' - Causes DOM Security Errors. So I made a php script that grabs it instead.
-	skin.src = 'http://earthiverse.ath.cx/images/skin/skin2.php?user=' + username;
+	skin.src = 'skin.php?user=' + username;
 	
 	skin.onload = function(){
 		//Draw the skin on to the scratch
