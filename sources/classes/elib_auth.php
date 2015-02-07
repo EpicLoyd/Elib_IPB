@@ -165,8 +165,8 @@ class public_elib_auth extends class_elib_core{
 	}
 	
 	public function CheckLauncherMD5($launchermd5, $jar){
-	  $md5launcherexe = md5_file($this->settings['elib_settings_mc_general_launcherpath']."fix.exe"));
-	  $md5launcherjar = md5_file($this->settings['elib_settings_mc_general_launcherpath']."fix.jar"));
+	  $md5launcherexe = md5_file($this->settings['elib_settings_mc_general_launcherpath']."fix.exe");
+	  $md5launcherjar = md5_file($this->settings['elib_settings_mc_general_launcherpath']."fix.jar");
 		if ($launchermd5 != NULL){
 			if ($jar){
 			   if($launchermd5 == $this->md5launcherjar){

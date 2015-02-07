@@ -8,16 +8,17 @@ if(!defined('IN_IPB'))
 
 class public_elib_bill extends class_elib_core{
 	protected $ik = array();
-	protected $ik = array();
+	protected $up = array();
 	
 	public function Init(){
 		
 		
 	}
 	
-	private function IK_CheckSign($data){
+	public function IK_CheckSign($raw){
 		///Clean data array
-		foreach ($data as $key => $value)
+		$data = array();
+		foreach ($raw as $key => $value)
 		{
 			if (!preg_match('/ik_/', $key)) continue;
 			$data[$key] = $value;
@@ -31,7 +32,6 @@ class public_elib_bill extends class_elib_core{
 		$signStr = implode(':', $data);
 		$sign = base64_encode(md5($signStr, true));
 		return ($sign == $ikSign) ? true : false;
-		
 	}
 	
 	private function UP_CheckSign($data){
@@ -59,16 +59,15 @@ class public_elib_bill extends class_elib_core{
 				"jsonrpc" => "2.0",
 				"result" => array("message" => "Успешно!"),
 				'id' => $this->settings['elib_settings_bill_up_id']
-			)
+			);
 			return json_encode($ret);
 	   }
 	   else{
 		   $ret = array(
 				"jsonrpc" => "2.0",
-				"error" => array("code" => -32000, "message" => "Ошибка!",
-				'id' => $this->settings['elib_settings_bill_up_id']
-			),
-		   
+				"error" => array("code" => -32000, "message" => "Ошибка!"),
+				'id' => $this->settings['elib_settings_bill_up_id'],
+			);
 	   }
     }
 	
@@ -87,10 +86,41 @@ class public_elib_bill extends class_elib_core{
 		
 	}
 	
-	public function Pay($amount, $login){
+	/// TODO: Pay without redirecting to interkassa site...
+	public function IK_DoPay($amount, $user){
+		$url = "https://sci.interkassa.com/";
+		$desc = $this->settings['elib_settings_bill_desc']." - User: ".$user." Native Amount: ".$amount;
+		$data = array(
+             'ik_co_id *' => $this->settings['elib_settings_bill_ik_id'],
+             'ik_pm_no' => $user,
+			 'ik_cur' => "RUB" ,
+			 'ik_am' => $amount,
+			 'ik_desc' => $desc,
+        );
+		$postString = http_build_query($data, '', '&');
+		
+		$ch = curl_init($url);
+		curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $postString);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+		curl_exec($ch);
+		curl_close($ch);
+		 
+		
+	}
+	
+	public function UP_DoPay($amount, $user){
 		
 		
 	}
+	
+	public function Apply($amount, $login){
+		$res = $this->DB->query("SELECT name,money FROM members WHERE name = '{$login}'");
+		$row = $this->DB->fetch($res);
+		$amount = (string)((float)$amount + (float)$row['money']);
+		$this->DB->query("UPDATE members SET money = '{$amount}'  WHERE name = '{$login}'");
+	}
+	
 	
 	
 }

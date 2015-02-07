@@ -26,7 +26,7 @@ class public_elib_minecraft_auth extends ipsCommand
 	  }else{
 		   $isbanned = $this->registry->getClass('elib_auth')->CheckBan($login);
 	       if ($isbanned){
-		       exit("Banned");
+		       exit($this->registry->getClass('elib_core')->encrypt("Вечный бан"));
 	       }
 		  $accesstoken = $isauth['token'];
 		  $sessionid = $isauth['session'];

@@ -1,3 +1,3 @@
 <?php
 
-$DEFAULT_SECTION = 'pay';
+$DEFAULT_SECTION = 'interkassa';

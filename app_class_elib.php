@@ -31,7 +31,7 @@ class app_class_elib
 		$this->lang       =  $this->registry->class_localization;
 		
 
-		require_once( IPSLib::getAppDir( 'elib' ) . "/sources/classes/elib_class.php" );
+		require_once( IPSLib::getAppDir( 'elib' ) . "/sources/classes/elib_core.php" );
 
 		if ( !ipsRegistry::isClassLoaded('elib_auth') )
         {
@@ -40,8 +40,8 @@ class app_class_elib
             $this->registry->setClass( 'elib_auth', new $classToLoad( $registry ) );
         }
 		if (!ipsRegistry::isClassLoaded('elib_bill')){
-			//$classToLoad = IPSLib::loadLibrary( IPSLib::getAppDir('elib').'/sources/classes/elib_bill.php', 'class_elib_', 'elib' );
-            //$this->registry->setClass( 'elib_bill', new $classToLoad( $registry ) );
+			$classToLoad = IPSLib::loadLibrary( IPSLib::getAppDir('elib').'/sources/classes/elib_bill.php', 'public_elib_bill', 'elib' );
+            $this->registry->setClass( 'elib_bill', new $classToLoad( $registry ) );
 		}
 		if (!ipsRegistry::isClassLoaded('elib_mcskin')){
 			//$classToLoad = IPSLib::loadLibrary( IPSLib::getAppDir('elib').'/sources/classes/elib_mcskin.php', 'public_elib_mcskin', 'elib' );

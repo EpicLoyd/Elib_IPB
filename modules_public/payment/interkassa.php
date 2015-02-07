@@ -6,12 +6,14 @@ class public_elib_payment_interkassa extends ipsCommand
 {
     public function doExecute( ipsRegistry $registry )
     {
-	  $data = $this->request()['reply'];
+	  $data = $registry->request()['reply'];
 	  if (strcmp($data, "success") == 0 || strcmp($data, "fail") == 0){
-		 die("<META HTTP-EQUIV='REFRESH' CONTENT='0;URL=http://casioo.ru/'");
+		 die("<META HTTP-EQUIV='REFRESH' CONTENT='0;URL=http://jknet.hopto.org/");
 	  }else{
-		  if( $this->registry->getClass('elib_bill')->IK_CheckSign($this->request())){
-			  $this->registry->getClass('elib_bill')->Pay($data['ik_am'], $data['ik_pm_no']);
+		  $data = $registry->request();
+		  $amount = (string)$data['ik_am'];
+		  if( $this->registry->getClass('elib_bill')->IK_CheckSign($registry->request())){
+			  $this->registry->getClass('elib_bill')->Apply($amount, $data['ik_pm_no']);
 		  }
 	  }
 	  
