@@ -4,9 +4,134 @@
     <lang>
       <word_app>elib</word_app>
       <word_pack>public_elib</word_pack>
-      <word_key>Hello_World</word_key>
-      <word_default>Holaa!</word_default>
-      <word_custom>HELP~!!!</word_custom>
+      <word_key>elib_text_hw</word_key>
+      <word_default>Hello World</word_default>
+    </lang>
+	    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_hw_ru</word_key>
+      <word_default>Привет, мир!</word_default>
+    </lang>
+    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_money</word_key>
+      <word_default>Money:</word_default>
+    </lang>
+	    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_money_ru</word_key>
+      <word_default>Деньги:</word_default>
+    </lang>
+    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_disabled</word_key>
+      <word_default>Elib is disabled, we are apologize for inconvience</word_default>
+    </lang>
+	    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_disabled_ru</word_key>
+      <word_default>ELib временно отключен, просим прощения за неудобства</word_default>
+    </lang>
+	    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_mc_uploadskin</word_key>
+      <word_default>Upload Skin</word_default>
+    </lang>
+	    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_mc_uploadskin_ru</word_key>
+      <word_default>Загрузить скин</word_default>
+    </lang>
+		    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_mc_uploadcloak</word_key>
+      <word_default>Upload Cloak</word_default>
+    </lang>
+	    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_mc_uploadcloak_ru</word_key>
+      <word_default>Загрузить Плащ</word_default>
+    </lang>
+		    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_mc_shop</word_key>
+      <word_default>Shop</word_default>
+    </lang>
+	    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_mc_shop_ru</word_key>
+      <word_default>Магазин</word_default>
+    </lang>
+		    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_mc_skin</word_key>
+      <word_default>Skin:</word_default>
+    </lang>
+	    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_mc_skin_ru</word_key>
+      <word_default>Скин:</word_default>
+    </lang>
+			    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_mc_status</word_key>
+      <word_default>Status:</word_default>
+    </lang>
+	    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_mc_status_ru</word_key>
+      <word_default>Статус:</word_default>
+    </lang>
+			    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_mc_job</word_key>
+      <word_default>Current Job:</word_default>
+    </lang>
+	    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_mc_job_ru</word_key>
+      <word_default>Текущая работа:</word_default>
+    </lang>
+				    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_level</word_key>
+      <word_default>Level:</word_default>
+    </lang>
+	    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_level_ru</word_key>
+      <word_default>Уровень:</word_default>
+    </lang>
+				    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_save</word_key>
+      <word_default>Save</word_default>
+    </lang>
+	    <lang>
+      <word_app>elib</word_app>
+      <word_pack>public_elib</word_pack>
+      <word_key>elib_text_ru</word_key>
+      <word_default>Сохранить</word_default>
     </lang>
 	  </languagegroup>
 </languageexport>

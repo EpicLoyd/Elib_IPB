@@ -6,6 +6,9 @@ class public_elib_minecraft_cabinet extends ipsCommand
 {
     public function doExecute( ipsRegistry $registry )
     {	
+	    if ($registry->request()['payret']){
+			
+		}
         $this->lang->loadLanguageFile( array( 'public_lang' ), 'elib' );
         $this->registry->output->setTitle( $this->lang->words['elib_text_hw'] );
         $this->registry->output->addNavigation( $this->lang->words['elib_text_hw'], NULL );
